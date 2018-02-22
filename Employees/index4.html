@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="assets/javascript/jquery.tablesorter.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+    
+  
+  <link rel="stylesheet" href="assets/styleshit/1.css">
+  <title>Моя страница</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-default" style="position:fixed; width:100%; z-index:2">
+	  <div class="container" id="qwer">
+	    <div class="">  
+	      <ul class="nav navbar-nav" style="margin-left: 10%"> 
+	        <li><a class="navbar-brand" id="navbar-brand" href="#">Employees</a></li>
+	        <li class="dropdown  visible-lg">
+	          <a href="#" class="dropdown-toggle color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >All Companies <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">One more separated link</a></li>
+	          </ul>
+	        </li>
+          <li class="dropdown visible-lg">
+          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Division<span class="caret"></span></a>
+          	<ul class="dropdown-menu">
+          		<li><a href="#">Action</a></li>
+          		<li><a href="#">Another action</a></li>
+          		<li><a href="#">Something else here</a></li>
+          		<li role="separator" class="divider"></li>
+          		<li><a href="#">Separated link</a></li>
+          		<li role="separator" class="divider"></li>
+          		<li><a href="#">One more separated link</a></li>
+          	</ul>
+          </li>
+          <li class="dropdown visible-lg">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Departmens<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li>
+		        <div class="dropdown" style="list-style-type:none" type="submit" class="btn btn-default">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="dropdownMenu1"><button type="submit" class="btn btn-default bot1  hidden-lg" style="background: #2cb2f0;color:white;border:none"><span class="glyphicon glyphicon-plus"></span></button></a>
+	            <ul class="dropdown-menu" style="list-style-type:none;background: #f2f2f2;position: absolute">
+	              <li class="dropdown">
+				          <a href="#" class="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >All Companies <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">One more separated link</a></li>
+				          </ul>
+	        			</li>
+			          <li class="dropdown">
+			          	<a href="#" class="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Division<span class="caret"></span></a>
+			          	<ul class="dropdown-menu">
+			          		<li><a href="#">Action</a></li>
+			          		<li><a href="#">Another action</a></li>
+			          		<li><a href="#">Something else here</a></li>
+			          		<li role="separator" class="divider"></li>
+			          		<li><a href="#">Separated link</a></li>
+			          		<li role="separator" class="divider"></li>
+			          		<li><a href="#">One more separated link</a></li>
+			          	</ul>
+			          </li>
+			          <li class="dropdown">
+			            <a href="#" class="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Departmens<span class="caret"></span></a>
+			            <ul class="dropdown-menu">
+			              <li><a href="#">Action</a></li>
+			              <li><a href="#">Another action</a></li>
+			              <li><a href="#">Something else here</a></li>
+			              <li role="separator" class="divider"></li>
+			              <li><a href="#">Separated link</a></li>
+			              <li role="separator" class="divider"></li>
+			              <li><a href="#">One more separated link</a></li>
+			            </ul>
+			          </li>
+	            </ul>
+		        </div>
+	        </li> 
+	        <li>
+		        <div class="dropdown hidden-xs" type="submit" class="btn btn-default">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="dropdownMenu1"><button type="submit" class="btn btn-default bot1" style="background: #2cb2f0;color:white;border:none"><span class="glyphicon glyphicon-plus"></span></button></a>
+	            <ul class="dropdown-menu" style="list-style-type:none">
+	              <li><a href="#">All more</a></li>
+	              <li><a href="#">All more</a></li>
+	              <li><a href="#">All more</a></li>
+	            </ul>
+		        </div>
+	        </li>
+	        <li>  
+	        	<button type="submit" class="btn btn-default hidden-xs" id="reload" style="background: #50de47"><span class="glyphicon glyphicon-repeat"></span></button>
+	        </li>
+	      </ul>
+      </div>        
+      <form class="navbar-form navbar-right visible-lg" style="float:right; position:relative; margin-right:8px">
+      	<input type="text" class="text-form" placeholder="Введите текст…">
+        <button type="submit" id="search" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+        <img width="35px" height="35px" style="background: white; border-radius: 40px; margin-left:5px">
+        <img width="20px" height="20px" style="background: red; border-radius: 5px; margin-left:5px; position:absolute; right:10px; bottom:25px">
+
+      </form>
+  	</div><!-- /.navbar-collapse -->
+	</nav>
+
+<!-- <video autoplay loop muted class="bgvideo" id="bgvideo">
+   <source src="multy/Quiet-Forest.mp4" type="video/mp4"></source>
+</video> -->
+
+
+
+	<div class="container">
+		<div class="content_wrapper">
+			<div class="left-sidebar">
+        <div class="btn-group-vertical col-xs-12">
+          <ul class="list-group" style="list-style-type:none;">	 
+	        	<li style="padding-bottom:20px">
+	        		<button type="button" class="navbar-toggle btn-lg" id="button-sidebar-toggle" style="padding-left:16px; padding-bottom:10px; margin-top:10px">
+			          <span class="glyphicon glyphicon-menu-hamburger" style="color:white"></span>
+		        	</button>
+		        </li>
+
+            <li>
+            	<div class="bot"><button type="submit" class="btn btn-default bot1  btn-lg" id="olo"><span class="glyphicon glyphicon-th-list"></span><span class="sidebar-button-text">Navigation</span></button>
+            	</div>
+            </li>
+            <li><div  class="bot "><button type="submit" class="btn btn-default bot1 btn-lg" style="padding-right:61px"><span class="glyphicon glyphicon-user"></span><span class="sidebar-button-text">User</span></button></div></li>
+            <li><div  class="bot"><button type="submit" class="btn btn-default bot1 btn-lg" style="padding-right:26px"><span class="glyphicon glyphicon-calendar"></span><span class="sidebar-button-text">Calendar</span></button></div></li>
+            <li><div  class="bot"><button type="submit" class="btn btn-default bot1 btn-lg" style="padding-right:57px"><span class="glyphicon glyphicon-list-alt"></span><span class="sidebar-button-text">Diary</span></button></div></li>
+            <li><div  class="bot"><button type="submit" class="btn btn-default bot1 btn-lg" style="padding-right:39px"><span class="glyphicon glyphicon-folder-close"></span><span class="sidebar-button-text">Folders</span></button></div></li>
+            <li><div  class="bot"><button type="submit" class="btn btn-default bot1 btn-lg" style="padding-right:21px"><span class="glyphicon glyphicon-comment"></span><span class="sidebar-button-text">Comment</span></button></div></li>
+          </ul>  
+        </div>
+			</div>
+			<div class="row">
+				<div style="padding-left:30px;padding-bottom:30px;">        
+	      	<div>
+		        <ul class="nav navbar-nav">
+		          <li>
+	          		<span style="float:left; margin-top:11px; margin-right:10px">View:</span>
+		          </li>
+		          <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="dropdownMenu1">All Employees<span class="caret"></span></a>
+		            <ul class="dropdown-menu">
+		            	<li><a href="#">Action</a></li>
+		              <li><a href="#">Another action</a></li>
+		              <li><a href="#">Something else here</a></li>
+		              <li role="separator" class="divider"></li>
+		              <li><a href="#">Separated link</a></li>
+		              <li role="separator" class="divider"></li>
+		              <li><a href="#">One more separated link</a></li>
+		            </ul>
+		          </li>
+		          <li>
+		          	<button type="submit" class="btn btn-default visible-lg">
+		          			<span class="glyphicon glyphicon-plus"></span>
+		          	</button>
+		          </li>
+		        </ul>        
+		        <ul class="nav navbar-nav hidden-xs " id="button-right-sidebar-toggle" style="float: right">
+		          
+		          <li><button  class="btn btn-default bot-right btn-lg" id="click-button-right-bar"><span class="glyphicon glyphicon-usd"></span></button></li>
+		          <li><button type="submit" class="btn btn-default bot-right btn-lg" id="click-button-right-bar"><span class="glyphicon glyphicon-star"></span></button></li>
+		          <li><button type="submit" class="btn btn-default bot-right btn-lg" id="click-button-right-bar2"><span class="glyphicon glyphicon-briefcase"></span></button></li>
+		          <li><button type="submit" class="btn btn-default bot-right btn-lg" id="click-button-right-bar3"><span class="glyphicon glyphicon-plane"></span></button></li>
+		          <li><button type="submit" class="btn btn-default bot-right btn-lg" id="click-button-right-bar4"><span class="glyphicon glyphicon-cog"></span></button></li>
+		          <li><button type="submit" class="btn btn-default bot-right btn-lg" id="click-button-right-bar5"><span class="glyphicon glyphicon-user"></span></button></li>
+
+		          <li>
+		          	<div class="dropdown" type="submit" class="btn btn-default bot1">
+		              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="dropdownMenu-right-bar"><button type="submit" class="btn btn-default bot1"><span class="glyphicon glyphicon-option-vertical"></span></button></a>
+		              <!-- <ul class="dropdown-menu pull-right" style="list-style-type:none">
+		                <li><a href="#">Action</a></li>
+		                <li><a href="#">Another action</a></li>
+		              </ul> -->
+		          	</div>
+		          </li>
+		        </ul> 
+					</div>
+				</div>
+			</div>
+			<div class="row" style="width:65%; float:left; color:black; z-index:200;padding-top:15px">
+        <div>
+          <table id="myTable" class="table table-hover tablesorter">
+	          <thead>
+	          	<tr style="background-color: #f2f2f2">
+	              <th id="tr-first">
+	                Name<span class="caret"></span>
+		            </th>
+		            <th>
+		             	Division
+	              </th>
+								<th>
+									Department
+	              </th>
+		            <th>
+		            	Job title
+	              </th>
+	              <th></th> 
+	          </thead>
+            <tbody> 
+	          </tr>
+            <tr class="active">
+              <td><span>Sarah Moharram-Mosallam</span></td>
+              <td>28</td>
+              <td>28</td>
+              <td>28</td>
+              <td><button type="submit" class="btm-table hidden-xs" style="float:right"><span class="glyphicon glyphicon-option-vertical"></span></button></td>
+
+            </tr>
+            <tr class="active">
+              <td>George Bernrd Shaw</td>
+              <td>45</td>
+              <td>87</td>
+              <td>33</td>
+              <td><button type="submit" class="btm-table hidden-xs" style="float:right"><span class="glyphicon glyphicon-option-vertical"></span></button></td>
+            </tr>
+            <tr class="active">
+              <td>Karamba Maramba Saramba</td>
+              <td>46</td>
+              <td>85</td>
+              <td>31</td>
+              <td><button type="submit" class="btm-table hidden-xs" style="float:right"><span class="glyphicon glyphicon-option-vertical"></span></button></td>
+            </tr>
+            <tr class="active">
+              <td>Sezam Pisos Trand</td>
+              <td>24</td>
+              <td>77</td>
+              <td>16</td>
+              <td><button type="submit" class="btm-table hidden-xs" style="float:right"><span class="glyphicon glyphicon-option-vertical"></span></button></td>
+            </tr>
+            <tr class="active">
+              <td>Arhamed Populus Dante</td>
+              <td>23</td>
+              <td>34</td>
+              <td>56</td>
+              <td><button type="submit" class="btm-table hidden-xs" style="float:right"><span class="glyphicon glyphicon-option-vertical"></span></button></td>
+            </tr>
+            <tr class="active">
+              <td>Kratus Afdeey Golden</td>
+              <td>22</td>
+              <td>13</td>
+              <td>48</td>
+              <td><button type="submit" class="btm-table hidden-xs" style="float:right"><span class="glyphicon glyphicon-option-vertical"></span></button></td>
+            </tr>
+            <tr class="active">
+              <td>Pirk Rosse Lord</td>
+              <td>94</td>
+              <td>55</td>
+              <td>39</td>
+              <td><button type="submit" class="btm-table hidden-xs" style="float:right"><span class="glyphicon glyphicon-option-vertical"></span></button></td>
+            </tr>
+            <tr class="active">
+              <td>Araram Pararam Pam</td>
+              <td>16</td>
+              <td>19</td>
+              <td>9</td>
+              <td><button type="submit" class="btm-table hidden-xs" style="float:right"><span class="glyphicon glyphicon-option-vertical"></span></button></td>
+            </tr>
+            <tr class="active">
+              <td>Param Pam Pam</td>
+              <td>78</td>
+              <td>66</td>
+              <td>49</td>
+              <td><button type="submit" class="btm-table hidden-xs" style="float:right"><span class="glyphicon glyphicon-option-vertical"></span></button></td>
+            </tr>
+            </tbody>
+          </table>
+      	</div>                        
+			</div>
+		</div> 
+	</div><!--end of container-->
+	<script type="text/javascript" src="assets/javascript/1.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() 
+	    { 
+	        $("#myTable").tablesorter(); 
+	    } 
+		); 
+	</script>
+</body>
+</html>

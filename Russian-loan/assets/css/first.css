@@ -1,0 +1,598 @@
+@charset "UTF-8";
+/**{
+	outline: 1px solid black; //temp
+}*/
+.row {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.col-md-8 {
+  padding-left: 0px; }
+
+.col-md-4 {
+  padding-right: 0px; }
+
+.col-md-6 {
+  padding-right: 0px; }
+
+.col-md-4.col-md-offset-4 {
+  padding-right: 0px; }
+
+ul > li {
+  display: inline; }
+  ul > li a {
+    float: left; }
+
+.container {
+  max-width: 1000px;
+  padding: 0px; }
+
+#header-background {
+  padding-top: 25px;
+  padding-bottom: 15px; }
+  #header-background div > ul > li > a {
+    padding-left: 21px;
+    color: black; }
+  #header-background div > button {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 26px;
+    padding-right: 26px;
+    color: gray;
+    border-color: gray;
+    margin-top: 8px; }
+
+#navigation-background {
+  background-color: #364656;
+  padding: 0px;
+  margin-top: 8px;
+  padding-leftft: 40px;
+  padding-right: 40px; }
+  #navigation-background div > ul > li > a {
+    padding: 20px;
+    margin-left: 0px;
+    background-color: none;
+    font-size: 15px;
+    color: white; }
+  #navigation-background div > ul > li > a:hover {
+    background-color: #334251; }
+  #navigation-background div > a {
+    padding: 20px;
+    margin-right: 0px;
+    background-color: none;
+    font-size: 14px;
+    color: white; }
+  #navigation-background div > a:hover {
+    background-color: #334251; }
+
+div.white-block {
+  background-image: url("../../media/imgs/bg-white.png");
+  background-size: cover;
+  position: relative; }
+  div.white-block h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 47px;
+    margin-bottom: 20px; }
+  div.white-block div > p {
+    font-size: 35px;
+    color: #ae5558; }
+    div.white-block div > p span {
+      font-size: 75px;
+      color: #ae5558; }
+  div.white-block div > p:last-child {
+    font-size: 18px;
+    color: black; }
+  div.white-block div > button {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    border-radius: 35px;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 2px solid grey;
+    color: grey; }
+  div.white-block div > button:hover {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    border-radius: 35px;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 2px solid grey;
+    color: grey; }
+  div.white-block div.padding-top-fuckin-p {
+    margin-top: 120px; }
+  div.white-block #white-centr-block::before {
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url("../../media/imgs/border.png");
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    left: -60px;
+    top: 100px; }
+  div.white-block #white-centr-block::after {
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url("../../media/imgs/border.png");
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    right: -80px;
+    top: 100px; }
+
+div.blue-block {
+  background-image: url("../../media/imgs/bg-blue.png");
+  background-size: cover; }
+  div.blue-block h1 {
+    font-size: 52px;
+    text-align: center;
+    margin-top: 47px;
+    margin-bottom: 30px;
+    color: white; }
+  div.blue-block div > ul > li > a {
+    font-size: 18px;
+    color: white;
+    padding-left: 40px; }
+  div.blue-block div > ul > li > input {
+    padding-left: 40px; }
+  div.blue-block div > button {
+    margin-bottom: 40px;
+    border-radius: 35px;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 2px solid white;
+    color: white; }
+  div.blue-block div > button:hover {
+    margin-bottom: 40px;
+    border-radius: 35px;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 2px solid white;
+    color: white; }
+
+div.red-block {
+  background-image: url("../../media/imgs/bg-red.png");
+  background-size: cover; }
+  div.red-block h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 47px;
+    margin-bottom: 30px;
+    color: white; }
+  div.red-block .picture {
+    text-align: center; }
+    div.red-block .picture img {
+      padding-top: 40px;
+      padding-bottom: 20px; }
+    div.red-block .picture p {
+      font-size: 18px;
+      color: white; }
+    div.red-block .picture span {
+      color: white;
+      font-size: 12px; }
+  div.red-block div > button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 35px;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 2px solid white;
+    color: white; }
+  div.red-block div > button:hover {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 35px;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 2px solid white;
+    color: white; }
+
+p {
+  /*	font-size: 25pt;*/
+  text-align: center; }
+
+.range-bar {
+  background-color: black;
+  border-radius: 15px;
+  display: block;
+  height: 4px;
+  position: relative;
+  width: 100%; }
+
+.range-quantity {
+  background-color: #000;
+  border-radius: 15px;
+  display: block;
+  height: 100%;
+  width: 0; }
+
+.range-handle {
+  background-color: #000;
+  border-radius: 100%;
+  cursor: move;
+  height: 30px;
+  left: 0;
+  top: -13px;
+  position: absolute;
+  width: 30px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
+
+.range-min,
+.range-max {
+  color: #000;
+  font-size: 12px;
+  height: 20px;
+  padding-top: 4px;
+  position: absolute;
+  text-align: center;
+  top: -9px;
+  width: 24px; }
+
+.range-min {
+  left: -30px; }
+
+.range-max {
+  right: -30px; }
+
+.thumbnail {
+  background-color: none !important; }
+
+.js-prise {
+  font-size: 20px; }
+
+.prise1 {
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #383838;
+  background-color: #d3dbc9;
+  color: #383838; }
+
+.prise2 {
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #383838;
+  background-color: #d3dbc9;
+  color: #383838; }
+
+div.opocity {
+  background-color: #364656;
+  opacity: 0.5;
+  color: white;
+  border-radius: 20px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  margin-top: 50px; }
+
+/*label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 16px;
+}*/
+/*input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:25px;
+    height:25px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url("../../media/imgs/ico-ok.png") left top no-repeat;
+    cursor:pointer;    
+    border:1px solid white;
+    border-radius: 3px;
+
+}
+input[type="checkbox"]:checked + label span {
+    background:url("../../media/imgs/ico-ok.png") -40px top no-repeat;
+
+}
+.radio{
+	padding-left: 10px;
+	color:white;
+	font-size: 20px;
+}*/
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px; }
+
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.checkbox + label {
+  cursor: pointer; }
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+/* Прячем оригинальный чекбокс. */
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.checkbox:not(checked) + label {
+  position: relative;
+  /* будем позиционировать псевдочекбокс относительно label */ }
+
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 0px;
+  border: 1px solid white;
+  /*box-shadow: inset 0 2px 3px rgba(0,0,0,.2);*/ }
+
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 18px;
+  height: 18px;
+  background: none;
+  /*box-shadow: 0 2px 5px rgba(0,0,0,.3);*/
+  /*transition: all .3s;*/
+  /* анимация, чтобы чекбокс переключался плавно */ }
+
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox:checked + label:before {
+  /*border:none;*/
+  width: 18px;
+  height: 18px; }
+
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.checkbox:checked + label:after {
+  position: absolute;
+  top: -6px;
+  left: -2px;
+  background: url("../../media/imgs/ico-ok.png") left top no-repeat;
+  width: 40px;
+  height: 40px; }
+
+/* Показываем получение фокуса. */
+.checkbox:focus + label:before {
+  /*box-shadow: 0 0 0 3px rgba(255,255,0,.5);*/ }
+
+div.radio label {
+  font-size: 16px;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+a.minus-plus:hover {
+  padding: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #34526d;
+  border-radius: 40px; }
+
+/*Cлайдер*/
+.slider {
+  z-index: 9;
+  width: 500px;
+  height: 290px;
+  overflow: hidden;
+  margin: 0 0 7px;
+  position: relative; }
+
+.slider ul,
+.slider li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+.slider ul {
+  width: 9999px; }
+
+.slider ul li {
+  list-style-type: none;
+  float: left;
+  width: 500px;
+  height: 290px; }
+
+.slider .nav {
+  position: absolute;
+  left: 15px;
+  bottom: 12px; }
+
+.slider .nav span {
+  opacity: 0.9;
+  background: #c49298;
+  margin: 0 8px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+  float: left;
+  box-shadow: 0 1px 2px #000; }
+
+.slider .nav span.on {
+  opacity: 0.9;
+  background: none;
+  border: 2px solid pink;
+  margin: 0 8px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 8px;
+  cursor: pointer; }
+
+.slider h2 {
+  color: white; }
+.slider p {
+  text-align: left;
+  color: white;
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
+.slider span {
+  text-align: left;
+  color: #be8c94; }
+
+#navigation-down-background {
+  background-color: white; }
+
+#footer {
+  background-color: #374756;
+  margin-bottom: 20px; }
+
+.footer .icon {
+  border: none;
+  display: inline-block;
+  width: 127px;
+  height: 34px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  vertical-align: bottom;
+  background: url("../../media/imgs/partners.png") no-repeat; }
+.footer .icon-visa {
+  margin-top: 25px;
+  width: 127px;
+  height: 30px;
+  background-position: 0 0px; }
+.footer .icon-master {
+  width: 127px;
+  height: 39px;
+  background-position: 0 -60px;
+  /*padding: 10px;*/ }
+.footer .icon-uni {
+  width: 127px;
+  height: 40px;
+  background-position: 0 -138px; }
+.footer .icon-qiwi {
+  width: 127px;
+  height: 40px;
+  background-position: 0 -216px; }
+.footer .icon-yandex {
+  width: 127px;
+  height: 35px;
+  background-position: 0 -300px; }
+.footer .icon-UnionPay {
+  width: 127px;
+  height: 36px;
+  background-position: 0 -372px; }
+.footer .icon-mir {
+  width: 127px;
+  height: 36px;
+  background-position: 0 -444px; }
+.footer .icon-contakt {
+  width: 127px;
+  height: 36px;
+  background-position: 0 -516px; }
+.footer #Ours-parnters {
+  font-size: 40px; }
+.footer .icon-visa:hover {
+  margin-top: 25px;
+  width: 127px;
+  height: 30px;
+  background-position: 0 -30px; }
+.footer .icon-master:hover {
+  width: 127px;
+  height: 39px;
+  background-position: 0 -99px;
+  /*padding: 10px;*/ }
+.footer .icon-uni:hover {
+  width: 127px;
+  height: 39px;
+  background-position: 0 -177px; }
+.footer .icon-qiwi:hover {
+  width: 127px;
+  height: 40px;
+  background-position: 0 -258px; }
+.footer .icon-yandex:hover {
+  width: 127px;
+  height: 35px;
+  background-position: 0 -336px; }
+.footer .icon-UnionPay:hover {
+  width: 127px;
+  height: 36px;
+  background-position: 0 -408px; }
+.footer .icon-mir {
+  width: 127px;
+  height: 36px;
+  background-position: 0 -444px; }
+.footer .icon-contakt {
+  width: 127px;
+  height: 36px;
+  background-position: 0 -516px; }
+.footer #Ours-parnters {
+  font-size: 40px; }
+
+.navigation-down p {
+  font-size: 18px;
+  color: #374756;
+  text-align: left; }
+.navigation-down span {
+  color: #8e9397; }
+.navigation-down ul {
+  padding: 0px; }
+.navigation-down a {
+  color: #8e9397; }
+.navigation-down .icon1 {
+  border: none;
+  display: inline-block;
+  width: 127px;
+  height: 34px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  vertical-align: bottom;
+  background: url("../../media/imgs/ico-social.png") no-repeat;
+  border-radius: 10px; }
+.navigation-down .icon-facebook {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0px; }
+.navigation-down .icon-twitter {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -32px; }
+.navigation-down .icon-vk {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -64px; }
+.navigation-down .icon-odnoklass {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -96px; }
+
+.lead {
+  padding-top: 5px; }
+
+.lead1 {
+  font-size: 30px;
+  color: white;
+  padding: 0px;
+  text-align: right; }
+
+.lead2 {
+  font-size: 12px;
+  color: white;
+  padding: 0px;
+  text-align: left; }
+
+/*# sourceMappingURL=first.css.map */

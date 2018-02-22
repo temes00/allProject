@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <script src="vendor/jquery-3.1.0.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.min.css"> 
+
+<!--     <link rel="stylesheet" href="vendor/node_modules/ion-rangeslider/css/ion.rangeSlider.css" >
+    <link rel="stylesheet" href="vendor/node_modules/ion-rangeslider/css/ion.rangeSlider.skinFlat.css" > -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="vendor/node_modules/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+
+    <script src="assets/js/restore.js"></script>
+
+    <link rel="stylesheet" href="assets/css/restore.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+
+    <title>RestoreFX</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container" style="position:relative">
+            <div class="row" style="position:absolute; z-index:100; width:100%; padding-top:20px">
+
+                <div class="navigation-bar">
+                    <div class="col-lg-3">
+                        <img src="media/logo1.png" style="float:left;width:150px;height:30px; margin-top:3px"> 
+                    </div>
+                    <div class="col-lg-9" style="padding-top: 10px">
+                        <ul style="padding-left:0px">
+                            <li><a href="#" class="home-button">Главная</a></li>
+                            <li><a href="#prise" class="prise-button">Услуги и цены</a></li>
+                            <li><a href="#exsample" class="example-button">Примеры работ</a></li>
+                            <li><a href="#zapis" class="record-button">Запись на обслуживание</a></li>
+                            <li><a href="#contacts" class="contact-button">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="slider-with-cars">
+                <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+                  <!-- Индикаторы для карусели -->
+                  <ol class="carousel-indicators">
+                    <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>   
+                  <!-- Слайды карусели -->
+                  <div class="carousel-inner">
+                    <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+                    <div id="first-slide" class="active item">
+                      <h2></h2>
+                      <div class="carousel-caption">
+                        <h3>Покрытие RestoreFX намного прочнее обычного лака</h3>
+                        <p>...</p>
+                      </div>
+                    </div>
+                    <!-- Слайд №2 -->
+                    <div id="second-slide" class="item">
+                      <h2></h2>
+                      <div class="carousel-caption">
+                        <h3>Автомобиль всегда под защитой, чтобы ни случилось!</h3>
+                        <p></p>
+                      </div>
+                    </div>
+                    <!-- Слайд №3 -->
+                    <div id="third-slide" class="item">
+                      <h2></h2>
+                      <div class="carousel-caption">
+                        <h3>Полное восстановление за 7 лней</h3>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Навигация для карусели -->
+                  <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+                  <a class="carousel-control left" href="#myCarousel" data-slide="prev" style="z-index:100">
+                   <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+                  <a style="z-index:101" class="carousel-control right" href="#myCarousel" data-slide="next">
+                   <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="text-block">
+                    <div class="col-lg-4">
+                        <a name="prise"></a>
+                        <div class="row">
+                        <h3>ТЕХНОЛОГИЯ <span>ВОССТАНОВЛЕНИЯ ЛКП</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
+                        </p>
+                        <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. </p>     
+                        </div>   
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                        <h3><span>ВОССТАНОВЛЕНИЕ ЛКП</span> АВТОМОБИЛЯ</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
+                        </p>
+                        <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                        <h3><span>ВОССТАНОВЛЕНИЕ ЛКП</span> АВТОМОБИЛЯ</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
+                        </p>
+                        <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div id="car-with-arrow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="news">
+                <div class="container">
+                    <div class="col-lg-12"><h3 class="new-up">Новости компании</h3></div>
+                    <div id="myCarousel1" class="carousel slide" data-interval="3000" data-ride="carousel">
+                          <!-- Индикаторы для карусели -->
+                          <ol class="carousel-indicators">
+                            <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+                            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                            <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+                            <li data-target="#myCarousel1" data-slide-to="1"></li>
+                            <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+                            <li data-target="#myCarousel1" data-slide-to="2"></li>
+                          </ol>   
+                          <!-- Слайды карусели -->
+                          <div class="carousel-inner">
+                            <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+                            <div id="" class="active item">
+                              <div class="carousel-caption1">
+                                
+                                <div class="">
+                                    <div id="news-block"><span>21</span><p>21.12</p></div>
+                                </div>
+                                <div class="">
+                                    <h3>Покрытие RestoreFX намного прочнее обычного лака</h3>
+
+                                </div>
+                                <div class="col-lg-1">
+                                    <div id="news-block"><span>22</span><p>21.12</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>Покрытие RestoreFX намного прочнее обычного лака</h3>
+
+                                </div><div class="col-lg-1">
+                                    <div id="news-block"><span>23</span><p>21.12</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>Покрытие RestoreFX намного прочнее обычного лака</h3>
+
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Слайд №2 -->
+                            <div id="" class="item">
+                              <div class="carousel-caption1">
+                                <div class="col-lg-1">
+                                    <div id="news-block"><span>21</span><p>21.12</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>Покрытие RestoreFX намного прочнее обычного лака</h3>
+
+                                </div><div class="col-lg-1">
+                                    <div id="news-block"><span>26</span><p>21.12</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>Покрытие RestoreFX намного прочнее обычного лака</h3>
+
+                                </div><div class="col-lg-1">
+                                    <div id="news-block"><span>42</span><p>21.12</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>Покрытие RestoreFX намного прочнее обычного лака</h3>
+
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Слайд №3 -->
+                            <div id="" class="item">
+                              <div class="carousel-caption1">
+                                <div class="col-lg-1">
+                                    <div id="news-block"><span>13</span><p>21.12</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>Покрытие RestoreFX намного прочнее обычного лака</h3>
+
+                                </div><div class="col-lg-1">
+                                    <div id="news-block"><span>32</span><p>21.12</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>Покрытие RestoreFX намного прочнее обычного лака</h3>
+
+                                </div><div class="col-lg-1">
+                                    <div id="news-block"><span>25</span><p>21.12</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>Покрытие RestoreFX намного прочнее обычного лака</h3>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                      <a class="carousel-control left" href="#myCarousel1" data-slide="prev" style="z-index:100">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a style="z-index:101" class="carousel-control right" href="#myCarousel1" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div>
+                </div>
+            </div>       
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="steps" style="display:inline-block;height:500px">
+                    <div class="col-lg-12"><h3>Полное восстановление ЛКП в <span>3 этапа</span></h3></div>
+                    <div class="col-lg-4">
+                        <a><div class="first-car-in-steps"></div></a>
+                        <div class="arrow"></div>
+                        <div class="arrow-block-1">Мойка кузова</div>
+                        <div class="arrow1"></div>
+                        <div class="arrow-block-2">Удаление инородных вкраплений</div>
+                        <div class="arrow2"></div>
+                        <div class="arrow-block-3">Удаление оксидного слоя</div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="second-car-in-steps"></div>
+                        <div class="arrow4"></div>
+                        <div class="arrow-block-4">Нанесение материала</div>
+                        <div class="arrow5"></div>
+                        <div class="arrow-block-5">Подготовка и чистка авто</div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="third-car-in-steps"></div>
+                        <div class="arrow6"></div>
+                        <div class="arrow-block-6">Твердость как у лака</div>
+                        <div class="arrow7"></div>
+                        <div class="arrow-block-7">Зеркальный блеск</div>
+                        <div class="arrow8"></div>
+                        <div class="arrow-block-8">Сушка</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="Our-work">
+                    <div class="container">
+                    <a name="exsample"></a>
+                    <div class="col-lg-12"><h3 class="new-up">Наши работы</h3></div>
+                    <div id="myCarousel2" class="carousel slide" data-interval="3000" data-ride="carousel">
+                          <!-- Индикаторы для карусели -->
+                          <ol class="carousel-indicators">
+                            <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+                            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                            <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+                            <li data-target="#myCarousel2" data-slide-to="1"></li>
+                            <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+                            <li data-target="#myCarousel2" data-slide-to="2"></li>
+                          </ol>   
+                          <!-- Слайды карусели -->
+                          <div class="carousel-inner">
+                            <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+                            <div id="" class="active item">
+                                <div class="carousel-caption2">
+                                    
+                                    
+                                    <div class="col-lg-3">
+                                        <div class="first-work"></div>
+                                    </div>
+                                    
+                                    <div class="col-lg-3">
+                                        <div class="second-work"></div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="third-work"></div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="fourth-work"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Слайд №2 -->
+                            <div id="" class="item">
+                                <div class="carousel-caption2">
+
+                                    <div class="col-lg-3">
+                                        <div class="first-work"></div>
+                                    </div>
+                                    
+                                    <div class="col-lg-3">
+                                        <div class="second-work"></div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="third-work"></div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="fourth-work"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Слайд №3 -->
+                            <div id="" class="item">
+                                <div class="carousel-caption2">
+                                    <div class="col-lg-3">
+                                        <div class="first-work"></div>
+                                    </div>
+                                    
+                                    <div class="col-lg-3">
+                                        <div class="second-work"></div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="third-work"></div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="fourth-work"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control left" href="#myCarousel2" data-slide="prev" style="z-index:100">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a style="z-index:101" class="carousel-control right" href="#myCarousel2" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="Our-reviews">
+                <div class="container">
+
+                    <div id="myCarousel3" class="carousel slide" data-interval="3000" data-ride="carousel">
+                        <!-- Индикаторы для карусели -->
+                        <ol class="carousel-indicators">
+                        <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+                            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                            <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+                            <li data-target="#myCarousel3" data-slide-to="1"></li>
+                            <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+                            <li data-target="#myCarousel3" data-slide-to="2"></li>
+                        </ol>   
+                        <!-- Слайды карусели -->
+                                            <div class="col-lg-12"><h3 class="new-up">Отзывы наших клиентов</h3></div>
+                        <div class="carousel-inner">
+                        <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+                            <div id="" class="active item">
+                              <div class="carousel-caption3">
+                                
+                                <div class="col-lg-1">
+                                    <div id="news-block"><span>21</span><p>12.11</p></div>
+                                </div>
+                                    <div class="prise-slide-text">
+                                <div class="col-lg-3" style="padding-left:10px">
+                                        <h4>ИГОРЬ СЛУЦКИЙ</h4>
+                                        <h4><span>SHEVROLE S23</span></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1">
+                                    <div id="news-block"><span>22</span><p>12.11</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="prise-slide-text">
+                                        <h4>ИГОРЬ СЛУЦКИЙ</h4>
+                                        <h4><span>SHEVROLE S23</span></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1">
+                                    <div id="news-block"><span>23</span><p>12.11</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="prise-slide-text">
+                                        <h4>ИГОРЬ СЛУЦКИЙ</h4>
+                                        <h4><span>SHEVROLE S23</span></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean.</p>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Слайд №2 -->
+                            <div id="" class="item">
+                              <div class="carousel-caption1">
+                                <div class="col-lg-1">
+                                    <div id="news-block"><span>21<br></span><p>12.11</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h4>ИГОРЬ СЛУЦКИЙ</h4>
+                                    <h4><span>SHEVROLE S23</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean.</p>
+                                </div><div class="col-lg-1">
+                                    <div id="news-block"><span>26</span><p>12.11</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h4>ИГОРЬ СЛУЦКИЙ</h4>
+                                    <h4><span>SHEVROLE S23</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean.</p>
+                                </div><div class="col-lg-1">
+                                    <div id="news-block"><span>42</span><p>12.11</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h4>ИГОРЬ СЛУЦКИЙ</h4>
+                                    <h4><span>SHEVROLE S23</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Слайд №3 -->
+                            <div id="" class="item">
+                              <div class="carousel-caption1">
+                                <div class="col-lg-1">
+                                    <div id="news-block"><span>13</span><p>12.11</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h4>ИГОРЬ СЛУЦКИЙ</h4>
+                                    <h4><span>SHEVROLE S23</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean.</p>
+                                </div><div class="col-lg-1">
+                                    <div id="news-block"><span>32</span><p>12.11</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h4>ИГОРЬ СЛУЦКИЙ</h4>
+                                    <h4><span>SHEVROLE S23</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean.</p>
+                                </div><div class="col-lg-1">
+                                    <div id="news-block"><span>25</span><p>12.11</p></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h4>ИГОРЬ СЛУЦКИЙ</h4>
+                                    <h4><span>SHEVROLE S23</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                            <a class="carousel-control left" href="#myCarousel3" data-slide="prev" style="z-index:100">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a style="z-index:101" class="carousel-control right" href="#myCarousel3" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="Our-prise">
+                <div class="container">
+                <div id="myCarousel4" class="carousel slide" data-interval="3000" data-ride="carousel">
+                      <!-- Индикаторы для карусели -->
+                      <ol class="carousel-indicators">
+                        <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+                        <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+                        <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+                        <li data-target="#myCarousel4" data-slide-to="1"></li>
+                        <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+                        <li data-target="#myCarousel4" data-slide-to="2"></li>
+                      </ol>   
+                      <!-- Слайды карусели -->
+                      <div class="col-lg-12"><h3 class="">АКЦИИ И ПРОГРАММЫ КОМПАНИИ</h3></div>
+                      <div class="carousel-inner">
+                        <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+                            <div id="" class="active item">
+                                <div class="carousel-caption4">
+                                    <div class="col-lg-1">
+                                        <div id="news-block"><span>№1</span></div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="text-after-number">
+                                            <span>Cras dapibus. Vivamus elementum semper nisi. Aenean vulpelus olgos</span><br>
+                                            <span class="first"> Quisque rutrum. Aenean </span><br><br>
+                                            <a href="">Lorem ipsum</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Слайд №2 -->
+                            <div id="" class="item">
+                                <div class="carousel-caption4">
+                                    <div class="col-lg-1">
+                                        <div id="news-block"><span>№1</span></div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="text-after-number">
+                                            <span>Cras dapibus. Vivamus elementum semper nisi. Aenean vulpelus olgos</span><br>
+                                            <span class="first"> Quisque rutrum. Aenean </span><br><br>
+                                            <a href="">Lorem ipsum</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Слайд №3 -->
+                            <div id="" class="item">
+                                <div class="carousel-caption4">
+                                    <div class="col-lg-1">
+                                        <div id="news-block"><span>№1</span></div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="text-after-number">
+                                            <span>Cras dapibus. Vivamus elementum semper nisi. Aenean vulpelus olgos</span><br>
+                                            <span class="first"> Quisque rutrum. Aenean </span><br><br>
+                                            <a href="">Lorem ipsum</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="gift"></div>
+                        </div>
+                            <a class="carousel-control left" href="#myCarousel4" data-slide="prev" style="z-index:100">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a style="z-index:101" class="carousel-control right" href="#myCarousel4" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="application">
+                <a name="zapis"></a>
+                    <div class="col-lg-8 col-lg-offset-4" style="margin-top:40px; margin-bottom:40px">
+                        <div class="border-button">                        
+                            <div class="button-center">
+                                <a href="" style="margin-left:5%">Заявка на обслуживание</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-2">
+                        <div class="input-group input-group-lg" style="border: 7px;border-style: solid;border-color: rgba(100, 100, 100, 0.1);border-radius: 20px; margin-bottom:10px">
+                          <span class="input-group-addon" id="sizing-addon1">ФИО</span>
+                          <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1">
+                        </div>    
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="input-group input-group-lg" style="border: 7px;border-style: solid;border-color: rgba(100, 100, 100, 0.1);border-radius: 20px;margin-bottom:10px">
+                          <span class="input-group-addon" id="sizing-addon1">E-mail</span>
+                          <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1">
+                        </div>    
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-2">
+                        <div class="input-group input-group-lg" style="border: 7px;border-style: solid;border-color: rgba(100, 100, 100, 0.1);border-radius: 20px;margin-bottom:10px">
+                          <span class="input-group-addon" id="sizing-addon1">Телефон</span>
+                          <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1">
+                        </div>    
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="input-group input-group-lg" style="border: 7px;border-style: solid;border-color: rgba(100, 100, 100, 0.1);border-radius: 20px;margin-bottom:10px">
+                          <span class="input-group-addon" id="sizing-addon1">Авто</span>
+                          <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1">
+                        </div>    
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="row">
+                <div class="footer">
+                    <div class="container">
+
+                    <div class="col-lg-2 col-lg-offset-5">
+                        
+                    </div>
+                    <div class="col-lg-5"></div>
+                    <div class="col-lg-4 col-lg-offset-4">
+                        <img src="media/logo2.png" style="width:370px; height:100px;padding:20px">
+                    </div>
+                    <a name="contacts"></a>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <ul style="list-style-type: none">
+                            <li><a>Главная</a></li>
+                            <li><a>Услуги и цены</a></li>
+                            <li><a href="">Примеры работ</a></li>
+                            <li><a href="">Запись на обслуживание</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <p style="text-align:center">c "Company" - Аутсорсинг дилерских авто сайтов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

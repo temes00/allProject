@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <script src="vendor/jquery-3.1.0.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.min.css"> 
+
+    <link rel="stylesheet" href="vendor/node_modules/ion-rangeslider/css/ion.rangeSlider.css" >
+    <link rel="stylesheet" href="vendor/node_modules/ion-rangeslider/css/ion.rangeSlider.skinFlat.css" >
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="vendor/node_modules/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+
+    <script src="assets/js/first.js"></script>
+
+    <link rel="stylesheet" href="assets/css/first.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+
+    <title>Russian-loan</title>
+</head>
+<body>
+
+<div class="container-all">
+    
+    <div class="row" id="header-background"> 
+        <div class="container">    
+            <div class="header">
+                <div class="">  
+                <img src="media/imgs/logo-ico.png" style="float:left;width:57px;height:47px; margin-top:18px; margin-left:40px"> 
+                <img src="media/imgs/logo-text.png" style="float:left;width:153px;height:18px;margin-top:33px; margin-left:16px">
+                   <div class="col-md-6" id="" style="float:right">
+                        <ul style="float:right">   
+                           <li><a href="#">г. Москва</a></li>
+                           <li><a href="#">О компании</a></li>
+                           <li><a href="#">Контакты</a></li>
+                           <li><a href="#">Франшиза</a></li>
+                           <li><a href="#">Eng</a></li>
+                        </ul>
+                   </div>
+                </div>
+                <div class="">
+                   <div class="col-md-6" style="float:right">
+                       <button class="buttun-header-partners" style="float:right">Партнерская программа</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="navigation-background"> <!-- Чистый навбар на всю длину -->
+        <div class="container">    
+            <div class="navigation">    
+                <div class="col-md-8">
+                    <ul style="padding-left:0px">
+                        <li><a href="#">ВЗЯТЬ ЗАЙМ</a></li>
+                        <li><a href="#">ПОГАСИТЬ ЗАЙМ</a></li>
+                        <li><a href="#">ПОМОЩЬ</a></li>
+                        <li><a  href="#">АКЦИИ/НОВОСТИ</a></li>
+                    </ul>       
+                </div>
+                <div class="col-md-4"><a type="button" style="float:right" href="#">ЛИЧНЫЙ КАБИНЕТ</a></div>
+            </div>
+        </div>    
+    </div>
+
+    <div class="row">
+        <div class="white-block">
+            <div class="container">    
+                <div class="row" style="padding-left:20px">
+                    <div class="row">
+                        <div class="col-md-12"><h1>Возьмите выгодный и быстрый займ наличными или на банковскую карту</h1></div>
+                    </div>
+                    <div class="row">  
+                        <div class="col-md-4">
+                            <div class="padding-top-fuckin-p"> 
+                                <p><span>50 000 <i class="fa fa-rub"></i></span></p>
+                                <p>сумма займа до</p>
+                            </div>
+                        </div>
+                        
+                        <!-- div class="col-md-1">
+                            <img src="media/imgs/border.png">
+                        </div> -->
+
+                        <div class="col-md-4" id="white-centr-block">
+                            <div class="padding-top-fuckin-p"> 
+                                <p><span>90 </span>дней</p>
+                                <p>на срок до</p>      
+                            </div>    
+                        </div>
+
+                        <!-- <div class="col-md-1">
+                            <img src="media/imgs/border.png">
+                        </div> -->
+
+                        <div class="col-md-4">
+                            <div class="padding-top-fuckin-p"> 
+                                <p><span>0,7% </span>в сутки</p>
+                                <p>процентная ставка до</p>
+                            </div>    
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <button class="white-block-button btn-link">Расчитать займ</button>
+                        </div>     
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="blue-block">
+            <div class="container">
+                <div class="row">
+                    <div class="row">    
+                        <h1>Параметры займа</h1>
+                    </div>
+                    <div class="row">     
+                        <div class="col-lg-11 col-lg-offset-1">
+                            <div class="radio">
+                                <input id="first-loan" type="radio" name="gender" value="first-loan" class="checkbox">
+                                <label for="first-loan"><span></span>Первоначальный займ</label>
+
+                                <input id="rep-loan" type="radio" name="gender" value="rep-loan" class="checkbox">
+                                <label for="rep-loan"><span></span>Повторный займ</label>
+
+                                <input id="pension" type="checkbox" name="" value="pension" class="checkbox">
+                                <label for="pension"><span></span>Я пенсионер</label>
+
+                                <input id="NDFL" type="checkbox" name="" value="NDFL" class="checkbox">
+                                <label for="NDFL"><span></span>Готов предоставить 2-НДФЛ</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row text-center">
+
+                        <div class="row text-center">
+                            <div class="col-xs-12 col-lg-12">
+                                <p class="lead" style="margin-top:20px; font-size:14px;color:white">Какую сумму Вы хотели бы получить: <a class="prise1"><span class="js-price">1000</span> руб</a></p>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-1 col-lg-offset-2" style="margin-top:20px">
+                            <a class="minus-plus" id="range1-minus"><img src="media/imgs/ico-minus.png"></a>
+                        </div>
+
+                        <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12 hero-feature">
+                            <div class="">
+                                
+                                <div class="caption">
+                                    <p>
+                                        <input type="text" id="range2" value="" name="range" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-1" style="margin-top:17px">
+                             <a class="minus-plus" id="range1-plus" style="color:white"><img src="media/imgs/ico-plus.png"></a>
+
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+                    <div class="row text-center">
+
+                        <div class="row text-center">
+                            <div class="col-xs-12">
+                                <p class="lead" style="margin-top:20px; font-size:14px;color:white">На какой срок Вам нужны эти деньги: <span class="prise2"><span class="js-days">1</span> дней</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class=" col-lg-1 col-lg-offset-2" style="margin-top:20px">
+                            
+                            <a class="minus-plus" id="range2-minus"><img src="media/imgs/ico-minus.png"></a>
+
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12 hero-feature">
+                            <div class="">
+                                
+                                <div class="caption">
+                                    <p>
+                                        <input type="text" id="day" value="" name="day">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-1" style="margin-top:16px">
+                             <a class="minus-plus" id="range2-plus" style="color:white"><img src="media/imgs/ico-plus.png"></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="opocity">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class=""> 
+                                    <p>Вы берете</p>
+                                    <p class="lead"><span class="js-price">1000</span> руб</p>
+                                </div>
+                            </div>
+                            
+                            <!-- div class="col-md-1">
+                                <img src="media/imgs/border.png">
+                            </div> -->
+
+                            <div class="col-md-4" id="white-centr-block">
+                                <div class="row"> 
+                                    <p>До(включительно)</p>
+                                    <div class="col-lg-6"><p class="lead1" style="float:right"><span class="day">1</span></p></div>
+                                    <div class="col-lg-6" style="padding-left: 0px">
+                                    <p class="lead2"><span class="month" style="float:left">январь</span> <span class="year" style="padding-left: 5px">2016</span></p>
+                                    <p class="lead2"><span class="week" style="float:left">понедельник</span></p>
+                                    </div>
+                                          
+                                </div>    
+                            </div>
+
+                            <!-- <div class="col-md-1">
+                                <img src="media/imgs/border.png">
+                            </div> -->
+
+                            <div class="col-md-4">
+                                <div class=""> 
+                                    <p>Возвращаете</p>
+                                    <p class="lead"><span class="js-prise-procent js-days-procent">0</span> руб</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">     
+                        <div class="col-lg-11 col-lg-offset-1">
+                            <div class="radio">
+<!--                             <ul>
+                                <li><input type="checkbox" name="">Я согласен с условиями передачи информации, обработкой и хранением персональных данных</li>
+                            </ul> -->
+                            <input id="licence" type="checkbox" name="gender" value="licence" class="checkbox checked">
+                            <label for="licence"><span></span>Я согласен с условиями передачи информации, обработкой и хранением персональных данных</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <button class="white-block-button btn-link">Оформить займ</button>
+                        </div>     
+                    </div>    
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <div class="row">
+        <div class="red-block">
+            <div class="container">
+                <div class="row">
+                    <h1>Наши безопасные и выгодные преимущества:</h1> 
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="picture">
+                            <div class="col-lg-2 col-lg-offset-1">
+                                <span><img src="media/imgs/ico-ppl.png"></span><br>
+                                <p>Честность</p>
+                                <span>Простые и понятные условия, полное отсутствие каких либо скрытых платежей</span>
+                            </div>
+                            <div class="col-lg-2">
+                                <span><img src="media/imgs/ico-speed.png"></span> <br>                               
+                                <p>Быстрота</p>
+                                <span>Быстрое оформление, всего 15 минут на рассмотрение и принятие решения по заявке</span>
+                            </div>
+                            <div class="col-lg-2">
+                                <span><img src="media/imgs/ico-money.png"></span><br>
+                                <p>Деньги</p>
+                                <span>Наличными по всей территории РФ, либо почти мгновенно на вашу банковскую карту</span>
+                            </div>
+                            <div class="col-lg-2">
+                                <span><img src="media/imgs/ico-return.png"></span><br>
+                                <p>Возврат</p>
+                                <span>Наличными в офисе, либо более чем 15 способами оплаты</span>
+                            </div>
+                            <div class="col-lg-2">
+                                <span><img src="media/imgs/ico-cal.png"></span><br>
+                                <p>Продление</p>
+                                <span>Заем может быть пролонгирован в любой момент в офисе, либо в личном кабинете на сайте</span>
+                            </div>
+                            
+                        </div>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <button class="white-block-button btn-link">Расчитать займ</button>
+                    </div>     
+                </div> 
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="slider">
+                                <ul>
+                                    <li>
+                                        <h2>Новости/<span style="text-decoration:underline; color:white">Акции</span></h2>
+                                        <p>ТСК Банк признан банком года в России в 2013 году по версии международного жюри авторитеного журнала The Bank</p>
+                                        <span>29 декабря 2014</span>
+                                        <p>Банковский журнал Global Finance признал ТСК Банк лучшим розничным интернет-банком России</p>
+                                        <span>15 января 2015</span>
+                                    </li>
+                                    <li>
+                                        <h2>Новости/Акции</h2>
+                                        <p>С другой стороны укрепление и развитие структуры представляет собой интересный эксперимент проверки направлений прогрессивного развития.<br> Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий.</p>
+                                        <span>1 декабря 2014</span>
+                                       
+                                    </li>
+                                    <li><h2>Новости/Акции</h2>
+                                        <p>Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. С другой стороны рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития.</p>
+                                        <span>2 января 2013</span>
+                                    </li>
+                                    <li><h2>Новости/Акции</h2>
+                                        <p>Таким образом новая модель организационной деятельности влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.</p>
+                                        <span>28 января 2013</span>
+                                    </li>
+                                    <li>
+                                        <h2>Новости/<span style="text-decoration:underline; color:white">Акции</span></h2>
+                                        <p>ТСК Банк признан банком года в России в 2013 году по версии международного жюри авторитеного журнала The Bank</p>
+                                        <span>29 декабря 2014</span>
+                                        <p>Банковский журнал Global Finance признал ТСК Банк лучшим розничным интернет-банком России</p>
+                                        <span>15 января 2015</span
+                                    </li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="slider">
+                                <ul>
+                                    <li><h2>Отзывы клиентов</h2>
+                                        <p>Благодарствую за понимание и возможность пользоваться вашими средствами. С ув. Владимир</p>
+                                        <hr>
+                                        <p>Владимир Елугачев, Воронеж</p>
+                                        <span>12 декабря 2015</span>
+                                    </li>
+                                    <li>
+                                        <h2>Отзывы клиентов</h2>
+                                        <p>Подвинчивать вдувать стропаль мор деклассироваться корректировочный нажираться прогоны . Бодать звздолет толщиномер дружественность укутаться концентричность кочеток подъять поколенный углеродный хомячок. С ув. Кирилл</p>
+                                        <hr>
+                                        <p>Кирилл Волчков, Ростов</p>
+                                        <span>23 декабря 2015</span>
+                                    </li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    
+
+    <div class="row" id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-2" style="text-align:right; color:#96a7b7; font-size:22px; margin-top:7px;margin-right:20px"><span id="Ours-partners">Наши партнеры</span></div>                
+                        <div class="col-lg-1" style="margin-right:50px"><span class="icon icon-visa"></span></div>
+                        <div class="col-lg-1" style="margin-right:30px"><span class="icon icon-master"></span></div>
+                        <div class="col-lg-1" style="margin-right:50px"><span class="icon icon-uni"></span></div>
+                        <div class="col-lg-1" style="margin-right:50px"><span class="icon icon-qiwi"></span></div>
+                        <div class="col-lg-1" style="margin-right:90px"><span class="icon icon-yandex"></span></div>
+                        <div class="col-lg-1" style="margin-right:0px"><span class="icon icon-UnionPay"></span></div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row" id="navigation-down-background">
+        <div class="container">
+            <div class="navigation-down">
+                <div class="col-lg-3">
+                    <div class="row">
+                        <p style="font-size:13px">2012-2014 ООО "Русский Займ"</p>
+                        <span>
+                            Свидетельство ФСФР России <br>
+                            № 2110150000683<br>
+                            от 08.11.2011 г.
+
+                        </span>
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <div class="row">
+                        <p>Справка</p>
+                        <ul>
+                            <li><a>Виды займов</a></li>
+                            <li><a>Получение займа</a></li>
+                            <li><a>Возврат займа</a></li>                        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="row">
+                        <p>Компания</p>
+                        <ul>
+                            <li><a>Вопрос/Ответ</a></li>
+                            <li><a>Правила/Соглашения</a></li>
+                            <li><a>Карта сайта</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="row">
+                        <p>Займы</p>
+                        <ul>
+                            <li><a>Лицензия</a></li><br>
+                            <li><a>Франшиза</a></li>
+                            <li><a>СМИ о нас</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="row">
+                        <div style="font-size:13px; color:#8e9397">Бесплатный звонок по РФ</div>
+                        <div style="font-size:30px; color:#8e9397">8 800 <span style="color:#c2384b">333 63 03</span></div>
+                        <div>
+                            <span class="icon1 icon-facebook"></span>
+                            <span class="icon1 icon-twitter"></span>
+                            <span class="icon1 icon-vk"></span>
+                            <span class="icon1 icon-odnoklass"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+</div><!-- container end -->
+
+
+</body>
+</html>
